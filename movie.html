@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <table width="1300" border=1 cellspacing=0 cellpadding=0 align="center">
+        <tr> 
+            <td height="100" colspan="3">
+                <big><h1>LETS GO</h1></big>            
+                <p align="right">
+				    <img src="1.png" width="52px" height="52px"/>
+					<input type ="text" name= "text" class="search" placeholder="search here" width="130px"/>
+					<input type="submit" name= "submit" class="submit" value="Search"/>
+                    <big><a href="login.html"> Login /</a></big>
+                    <big><a href="registration.html"> Registration </a></big>                  
+                </p>                
+            </td>
+        </tr>
+        <tr height="80">                                 
+            <td>
+                 <big><a href="index.html"> Home </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</big>
+                 <big><a href=" movie.html "> Movie </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</big>
+                 <big><a href="education.html"> Education</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</big>
+                 <big><a href="food.html"> Food </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</big>
+                 <big><a href="fashion.html"> Fashion </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</big>
+                 <big><a href="sports.html"> Sports </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</big>
+                 <big><a href="business.html"> Business </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</big>			
+			</td>
+        </tr>        
+        <tr height="400">
+			<td>
+				<big>Welcome to new movie information center</big>
+				<table border="1" height="400" width="360">
+				<th>
+				  <div class="w3-content w3-display-container">
+					  <img class="mSlides" src="mb1.jpg" style="width:400px" height ="350">
+					  <img class="mSlides" src="mb2.jpg" style="width:400px" height ="350">
+					  <img class="mSlides" src="mb3.jpg" style="width:400px" height ="350">
+					  <img class="mSlides" src="m1.jpg" style="width:400px" height ="350">
+					  <img class="mSlides" src="m3.jpg" style="width:400px" height ="350">
+					  <img class="mSlides" src="m1.jpg" style="width:400px" height ="350">
+					  <img class="mSlides" src="me1.jpg" style="width:400px" height ="350">
+					  <img class="mSlides" src="me2.jpg" style="width:400px" height ="350">
+					  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+					  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+					</div>
+				<script>
+					var slIndex = 1;
+					showDivs(slIndex);
+					function plusDivs(n) {
+					  showDivs(slIndex += n);
+					}
+					function showDivs(n) {
+					  var i;
+					  var x = document.getElementsByClassName("mSlides");
+					  if (n > x.length) {slIndex = 1}    
+					  if (n < 1) {slIndex = x.length}
+					  for (i = 0; i < x.length; i++) {
+						 x[i].style.display = "none";  
+					  }
+					  x[slIndex-1].style.display = "block";  
+					}
+					autoSlide();
+					function autoSlide(){
+						var i;
+					    var x = document.getElementsByClassName("mSlides");
+						for (i = 0; i < x.length; i++) {
+							x[i].style.display = "none";  
+						}
+						if(slIndex>x.length){slIndex=1}
+						x[slIndex-1].style.display="block";
+						slIndex++;
+						setTimeout(autoSlide,2000);
+					}
+				</script>
+				</th>
+				<th>
+					<p>This will be edited later</p>
+				</th>
+			</table>
+            </td>
+			
+        </tr>
+        
+        
+        <tr>
+            <td  height="50" align=center colspan="3">
+				<big><a href="policy.html"> Privace Policy </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</big>
+				<big><a href="aboutus.html"> About Us </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</big>
+				<big><a href="terms.html"> Terms and Condition </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</big>
+				<big><a href="paymentmethod.html"> Payment Method </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</big>
+			</td>
+        </tr>
+    </table>
+</body>
+</html>
