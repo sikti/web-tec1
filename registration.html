@@ -1,93 +1,74 @@
 <!DOCTYPE html>
 <html>
 <body>
+<form action="registration.php">
     <table width="1300" border=1 cellspacing=0 cellpadding=0 align="center">
         <tr>
             
             <td height="100" colspan="3">
-                <big><h1>LETS GO</h1></big>
+					<a href="index.html"><big><h1>LETS GO</h1></big></a>                   
                 
-                <p align="right">
-				    <img src="1.png" width="52px" height="52px"/>
-					<input type ="text" name= "text" class="search" placeholder="search here" width="130px"/>
-					<input type="submit" name= "submit" class="submit" value="Search"/>
-                    <big><a href="login.html"> Login /</a></big>
-                    <big><a href="registration.html"> Registration </a></big>  
-                
-                </p>
-                
-                
+
             </td>
         </tr>
-        <br>
-        
-        <tr height="80">
+        <br/>
+        <tr height="400">
 			
                                             
             <td>
-                 <big><a href="index.html"> Home </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</big>
-                 <big><a href=" movie.html "> Movie </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</big>
-                 <big><a href="education.html"> Education</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</big>
-                 <big><a href="food.html"> Food </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</big>
-                 <big><a href="fashion.html"> Fashion </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</big>
-                 <big><a href="sports.html"> Sports </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</big>
-                 <big><a href="business.html"> Business </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</big>
+                <big>Welcome to Event information center</big><br/>
 
-			
+			</td>
+			<td>
+				<p align="left">
+                    <big><a href="index.html"> Login /</a></big>
+                    <big><a href="registration.html"> Registration </a></big> 
+						 <fieldset>
+							<legend> REGISTRATION </legend>
+							<strong>Name:</strong>
+								<input type="text" name="name">
+							<br/>
+							<br/>
+							<strong>Email:</strong>
+								<input type="text" name="email">
+							<strong>Address:</strong>
+								<input type="text" name="email">	
+							<br/>
+							<br/>
+							<strong>User Name:</strong>
+								<input type="text" name="username">	
+							<br/>
+							<br/>
+							<strong>Password:</strong>
+								<input type="password" name="password">	
+							<br/>
+							<br/>
+							<strong>Confirm Password:</strong>
+								<input type="text" name="cpassword">	
+							<br/>
+							<br/>
+							<fieldset>
+							<legend> Gender </legend>
+										<input type="radio" name="gender" value="male"> Male
+										<input type="radio" name="gender" value="female"> Female
+										<input type="radio" name="gender" value="other"> Other
+							</fieldset>
+							<br/>
+							<br/>
+							<fieldset>
+							<legend> Date of Birth </legend>
+										<input type="text" name="day">/ 
+										<input type="text" name="month">/
+										<input type="text" name="year">(dd/mm/yy)
+							</fieldset>
+							<br/>
+							<input type="submit" name="Submit">
+							<input type="reset" name="Reset">
+						</fieldset>
+                </p> 
 			</td>
 			
         </tr>        
-        <tr height="400">
-			
-           
-            <td>
-                
-			     <fieldset>
-		<legend> REGISTRATION </legend>
-		<strong>Name:</strong>
-			<input type="text" name="name">
-		<br>
-		<br>
-		<strong>Email:</strong>
-			<input type="text" name="email">
-			
-		<br>
-		<br>
-		<strong>User Name:</strong>
-			<input type="text" name="username">	
-		<br>
-		<br>
-		<strong>Password:</strong>
-			<input type="password" name="password">	
-		<br>
-		<br>
-		<strong>Confirm Password:</strong>
-			<input type="text" name="cpassword">	
-		<br>
-		<br>
-		<fieldset>
-		<legend> Gender </legend>
-					<input type="radio" name="gender" value="male"> Male
-					<input type="radio" name="gender" value="female"> Female
-					<input type="radio" name="gender" value="other"> Other
-	</fieldset>
-	<br>
-	<br>
-	<fieldset>
-		<legend> Date of Birth </legend>
-					<input type="text" name="day">/ 
-					<input type="text" name="month">/
-					<input type="text" name="year">(dd/mm/yy)
-		</fieldset>
-		<br>
-		<input type="submit" name="Submit">
-		<input type="reset" name="Reset">
-	</fieldset>		
-			</td>
-			
-        </tr>
-        
-        
         <tr>
             <td  height="50" align=center colspan="3">
 				<big><a href="policy.html"> Privace Policy </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</big>
@@ -97,5 +78,6 @@
 			</td>
         </tr>
     </table>
+</form>
 </body>
 </html>
