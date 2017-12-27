@@ -1,0 +1,23 @@
+<?php
+$username = '';
+$password  ='';
+
+if(isset($_POST['btn_sub'])){
+$username = $_POST['username'];
+$password  = $_POST['password'];
+
+$conn = new mysqli("localhost","root","","webtech");
+
+$sql = "SELECT username, password FROM registration";
+
+echo "Recorded!!!";
+
+if ($conn->query($sql)=== true)
+{
+	echo "Recorded!!!";
+}
+else
+{
+	echo "Not Recorded !!!";
+}
+}
