@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <body>
-<form>
+<form method="post" action="addfood.php">
     <table width="1300" border=1 cellspacing=0 cellpadding=0 align="center">
         <tr>
             <td height="100" colspan="3">
@@ -34,11 +34,11 @@
 				<fieldset>
 					<legend> <h3>Add Food</h3> </legend>
 						<strong>Event Name:</strong>
-							<input type="text" name="moviename">
+							<input type="text" name="fname">
 							<br/>
 							<br/>
 						<strong>Type:</strong>
-							<input type="text" name="movietype">
+							<input type="text" name="ftype">
 							<br/>
 						<label>Picture</label>
 							<input type="file" name="file" accept="image/*" />
@@ -52,10 +52,10 @@
 							<br/>
 							<br/>
 							<strong> Event Date: </strong>
-							<input type="text" name="eventdate">
+							<input type="text" name="price">
 							<br/>
 							<hr/>
-					<input type="submit" name="Save">
+					<input type="submit" name="btn_sub">
 
 				</fieldset>
 			</td>
