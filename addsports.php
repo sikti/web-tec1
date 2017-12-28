@@ -12,11 +12,11 @@ $date  = $_POST['date'];
 
 
 
-//$conn = new mysqli("localhost","root","","webtech");
+
 $sql = "INSERT INTO `sports` (`sname`, `stype`, `location`, `details`, `price`, `date`) VALUES ('$sname', '$stype', '$location', '$details', '$price', '$date')";
 if ($con->query($sql)=== true)
 {
-	echo "Recorded!!!";
+	header("location: index.php");
 }
 else
 {
