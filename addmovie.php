@@ -15,7 +15,7 @@ $ticketprice  = $_POST['ticketprice'];
 $sql = "INSERT INTO `movie` (`moviename`, `movietype`, `location`, `details`, `ticketprice`) VALUES ('$moviename', '$	movietype', '$location', '$details', '$	ticketprice')";
 if ($con->query($sql)=== true)
 {
-	echo "Recorded!!!";
+	header("location: index.php");
 }
 else
 {
