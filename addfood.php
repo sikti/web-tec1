@@ -15,7 +15,7 @@ $price  = $_POST['price'];
 $sql = "INSERT INTO `food` (`fname`, `ftype`, `location`, `details`, `price`) VALUES ('$fname', '$	ftype', '$location', '$details', '$price')";
 if ($con->query($sql)=== true)
 {
-	echo "Recorded!!!";
+	header("location: index.php");
 }
 else
 {
