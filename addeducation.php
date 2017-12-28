@@ -11,15 +11,14 @@ $price  = $_POST['price'];
 
 
 
-//$conn = new mysqli("localhost","root","","webtech");
 $sql = "INSERT INTO `education` (`name`, `edutype`, `location`, `details`, `price`) VALUES ('$name', '$edutype', '$location', '$details', '$price')";
 if ($con->query($sql)=== true)
 {
-	echo "Recorded!!!";
+	header("location: index.php");
 }
 else
 {
-	echo "Not Recorded !!!";
+	echo $invaliMsg;
 }
 }
 
